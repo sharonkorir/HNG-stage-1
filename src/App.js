@@ -22,6 +22,8 @@
 //   );
 // }
 
+import M from 'materialize-css';
+
 function App() {
   return(
     <div className="container">
