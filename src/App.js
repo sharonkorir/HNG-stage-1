@@ -27,18 +27,26 @@
 function App() {
   return(
     <div className="container" style={{paddingTop:50}}>
-      <div className="right-align">
-        <div class="hide-on-small-only">
-          <p>share</p>
-        </div>
-        <div class="hide-on-med-and-up">
-          <p>more</p>
+      <div className="row">
+        <div className="col s6 m6 l6"></div>
+        <div className="col s6 m6 l6">
+          <div className="center-align">
+            <div class="hide-on-small-only">
+              <p>share</p>
+            </div>
+            <div class="hide-on-med-and-up"
+            style={{
+              paddingLeft:'120px'
+            }}>
+              <p>more</p>
+            </div>
+          </div>
         </div>
       </div>
       <header className="profile center-align">
         
-        <p>profile pic here id profile_img</p>
-        <h6>coding_architct id twitter</h6>
+        <img id="profile_img" src=""></img>
+        <h6 id="twitter">coding_architct id twitter</h6>
         <p className="hide" id="slack">sharon korir id, slack, className hidden</p>
       </header>
       <div className="row">
@@ -49,33 +57,43 @@ function App() {
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://training.zuri.team/" className='black-text'>Zuri Team id btn_zuri</a>
+            <a href="https://training.zuri.team/" className='black-text' id="btn_zuri">Zuri Team id btn_zuri</a>
           </div>
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://books.zuri.team" className='black-text'>Zuri Books id 'books'</a>
+            <a href="https://books.zuri.team" className='black-text' id="books" title="Your one stop for books about design and coding">Zuri Books</a>
           </div>
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://books.zuri.team/python-for-beginners?ref_id=sharon korir" className='black-text'>Python Books id 'book_python'</a>
+            <a href="https://books.zuri.team/python-for-beginners?ref_id=sharon korir" className='black-text' id="book_python" title="Looking to learn python? look no further, go from zero to hero with these books">Python Books</a>
           </div>
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://background.zuri.team" className=' black-text'>Background Check for Coders 'pitch'</a>
+            <a href="https://background.zuri.team" className=' black-text' id="pitch" title="Hire coders with confidence! Let us do the background check for you">Background Check for Coders</a>
           </div>
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://books.zuri.team/design-rules" className='black-text'>Design Books id 'book_design'</a>
+            <a href="https://books.zuri.team/design-rules" className='black-text' id="book_design" title="Design 101, the only book you need to learn design, offered to you by Zuri">Design Books id 'book_design'</a>
           </div>
         </div>
       </div>
-      <div className="center-align">
-        <p>slack icon</p>
-        <a href="https://github.com/sharonkorir">github icon</a>
+      <div className="row">
+        <div className="center-align">
+          <a
+          style={{
+            padding: '10px',
+          }}
+          >slack icon</a>
+          <a href="https://github.com/sharonkorir" 
+          style={{
+            padding: '10px',
+          }}
+          >github icon</a>
+        </div>
       </div>
       <div className="divider"></div>
       <div className="row">
