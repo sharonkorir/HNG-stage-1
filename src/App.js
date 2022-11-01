@@ -59,7 +59,7 @@ function App() {
         </div>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
-            <a href="https://books.zuri.team/design-rules" className='black-text' id="book_design" title="Design 101, the only book you need to learn design, offered to you by Zuri">Design Books id 'book_design'</a>
+            <a href="https://books.zuri.team/design-rules" className='black-text' id="book_design" title="Design 101, the only book you need to learn design, offered to you by Zuri">Design Books</a>
           </div>
         </div>
       </div>
@@ -83,7 +83,10 @@ function App() {
           src={zuri}
           alt="zuri logo"></img>
         </div>
-        <div className="col s12 m12 l4">
+        <div className="col s12 m12 l4 center-align hide-on-small-only">
+          <p className="grey-text">HNG Internship 9 Frontend Task</p>
+        </div>
+        <div className="col s12 m12 l4 hide-on-med-and-up">
           <p className="grey-text">HNG Internship 9 Frontend Task</p>
         </div>
         <div className="col s12 m12 l4 hide-on-small-only" style={{paddingLeft:'270px'}}>
@@ -91,7 +94,7 @@ function App() {
           src={I4G}
           alt="I4G logo"></img>
         </div>
-        <div className="hide-on-med-and-up">
+        <div className="col s12 m12 l4 hide-on-med-and-up">
           <img
           src={I4G}
           alt="I4G logo"></img>
