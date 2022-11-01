@@ -1,28 +1,11 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
 // import M from 'materialize-css';
+import profile from './images/profile.jpeg';
+import github from './images/github.png';
+import I4G from './images/I4G.png';
+import more from './images/more.png';
+import share from './images/share.png';
+import slack from './images/slack.png';
+import zuri from './images/zuri.png';
 
 function App() {
   return(
@@ -30,24 +13,23 @@ function App() {
       <div className="row">
         <div className="col s6 m6 l6"></div>
         <div className="col s6 m6 l6">
-          <div className="center-align">
+          <div className="right-align">
             <div class="hide-on-small-only">
-              <p>share</p>
+              <img src={share} alt="more button" className="responsive-img"></img>
             </div>
             <div class="hide-on-med-and-up"
             style={{
               paddingLeft:'120px'
             }}>
-              <p>more</p>
+              <img src={more} alt="more button" className="responsive-img"></img>
             </div>
           </div>
         </div>
       </div>
       <header className="profile center-align">
-        
-        <img id="profile_img" src=""></img>
-        <h6 id="twitter">coding_architct id twitter</h6>
-        <p className="hide" id="slack">sharon korir id, slack, className hidden</p>
+        <img src={profile} id="profile_img" alt="my profile" class="circle responsive-img" style={{maxHeight:'100px', minWidth:'100px'}}></img>
+        <h5 id="twitter"><strong>coding_architct</strong></h5>
+        <p className="hide" id="slack">sharon korir</p>
       </header>
       <div className="row">
         <div className="col s12 m12 l12">
@@ -81,30 +63,38 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row" style={{maxHeight:'50px'}}>
         <div className="center-align">
-          <a
-          style={{
-            padding: '10px',
-          }}
-          >slack icon</a>
-          <a href="https://github.com/sharonkorir" 
-          style={{
-            padding: '10px',
-          }}
-          >github icon</a>
+            <img src={slack} alt='slack-logo' className='responsive-img'></img>
+            <a href="https://github.com/sharonkorir" 
+            style={{
+              padding: '10px',
+            }}
+            ><img src={github} alt="github logo" className="responsive-img"></img></a>
         </div>
       </div>
       <div className="divider"></div>
-      <div className="row">
-        <div className="col s12 m4 l4 left-align">
-          <p>zuri internship icon...flex on wide screen, cascade on mobile</p>
+      <div className="row" 
+      style={{
+        paddingTop: '20px',
+      }}>
+        <div className="col s12 m12 l4">
+          <img
+          src={zuri}
+          alt="zuri logo"></img>
         </div>
-        <div className="col s12 m4 l4 center-align">
-          <p>HNG Internship 9 Frontend Task</p>
+        <div className="col s12 m12 l4">
+          <p className="grey-text">HNG Internship 9 Frontend Task</p>
         </div>
-        <div className="col s12 m4 l4 right-align">
-          <p>Ingressive for good icon</p>
+        <div className="col s12 m12 l4 hide-on-small-only" style={{paddingLeft:'270px'}}>
+          <img
+          src={I4G}
+          alt="I4G logo"></img>
+        </div>
+        <div className="hide-on-med-and-up">
+          <img
+          src={I4G}
+          alt="I4G logo"></img>
         </div>
       </div>
     </div>
