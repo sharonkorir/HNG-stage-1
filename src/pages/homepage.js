@@ -12,10 +12,10 @@ function Home(){
         <div className="col s6 m6 l6"></div>
         <div className="col s6 m6 l6">
           <div className="right-align">
-            <div class="hide-on-small-only">
+            <div className="hide-on-small-only">
               <img src={share} alt="more button" className="responsive-img"></img>
             </div>
-            <div class="hide-on-med-and-up"
+            <div className="hide-on-med-and-up"
             style={{
               paddingLeft:'120px'
             }}>
@@ -25,7 +25,7 @@ function Home(){
         </div>
       </div>
       <header className="profile center-align">
-        <img src={profile} id="profile_img" alt="my profile" class="circle responsive-img" style={{maxHeight:'100px', minWidth:'100px'}}></img>
+        <img src={profile} id="profile_img" alt="my profile" className="circle responsive-img" style={{maxHeight:'100px', minWidth:'100px'}}></img>
         <h5 id="twitter"><strong>coding_architct</strong></h5>
         <p className="hide" id="slack">sharon korir</p>
       </header>
