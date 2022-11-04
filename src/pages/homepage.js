@@ -4,6 +4,7 @@ import github from '../images/github.png';
 import more from '../images/more.png';
 import share from '../images/share.png';
 import slack from '../images/slack.png';
+// import {Link} from 'react-router-dom';
 
 function Home(){
   return(
