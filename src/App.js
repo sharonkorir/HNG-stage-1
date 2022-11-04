@@ -1,11 +1,10 @@
 // import M from 'materialize-css';
 import profile from './images/profile.jpeg';
 import github from './images/github.png';
-import I4G from './images/I4G.png';
 import more from './images/more.png';
 import share from './images/share.png';
 import slack from './images/slack.png';
-import zuri from './images/zuri.png';
+
 
 function App() {
   return(
@@ -76,33 +75,6 @@ function App() {
               padding: '10px',
             }}
             ><img src={github} alt="github logo" className="responsive-img"></img></a>
-        </div>
-      </div>
-      <div className="divider"></div>
-      <div className="row" 
-      style={{
-        paddingTop: '20px',
-      }}>
-        <div className="col s12 m12 l4">
-          <img
-          src={zuri}
-          alt="zuri logo"></img>
-        </div>
-        <div className="col s12 m12 l4 center-align hide-on-small-only">
-          <p className="grey-text">HNG Internship 9 Frontend Task</p>
-        </div>
-        <div className="col s12 m12 l4 hide-on-med-and-up">
-          <p className="grey-text">HNG Internship 9 Frontend Task</p>
-        </div>
-        <div className="col s12 m12 l4 hide-on-small-only" style={{paddingLeft:'270px'}}>
-          <img
-          src={I4G}
-          alt="I4G logo"></img>
-        </div>
-        <div className="col s12 m12 l4 hide-on-med-and-up">
-          <img
-          src={I4G}
-          alt="I4G logo"></img>
         </div>
       </div>
     </div>
