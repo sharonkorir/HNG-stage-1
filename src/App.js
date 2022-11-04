@@ -62,6 +62,11 @@ function App() {
             <a href="https://books.zuri.team/design-rules" className='black-text' id="book_design" title="Design 101, the only book you need to learn design, offered to you by Zuri">Design Books</a>
           </div>
         </div>
+        <div className="col s12 m12 l12">
+          <div className="card-panel grey lighten-3 center-align">
+            <a className='black-text' id='contact' href='/contact'>Contact Me</a>
+          </div>
+        </div>
       </div>
       <div className="row" style={{maxHeight:'50px'}}>
         <div className="center-align">
