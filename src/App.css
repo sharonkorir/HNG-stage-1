@@ -1,17 +1,22 @@
 /* input focus color */
-.input-field input[type=text]:focus {
-  color: #D0D5DD;
-  border: 1px solid #D0D5DD;
-  box-shadow: 0 1px 0 0 #000;
+.input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=checkbox]:focus{
+  border: 1px solid #84CAFF;
+  border-bottom: 1px solid #1570EF !important;
+  box-shadow: 0 1px 0 0 #84CAFF;
   border-radius: 8px;
 }
 
 /* input field */
-.input-field input[type=text] {
+.input-field input[type=text], .input-field input[type=email], .input-field input[type=checkbox]{
   margin-top: 5px;
   color: #D0D5DD;
   border: 1px solid #D0D5DD;
   border-radius: 8px;
+}
+
+input:-internal-autofill-selected {
+  background-image: none !important;
+  background-color:white !important;
 }
 
 /* label color */
@@ -25,29 +30,11 @@
 }
 
 /* input focus color */
-.input-field input[type=email]:focus {
-  color: #D0D5DD;
-  border: 1px solid #D0D5DD;
-  border-bottom: 1px solid #D0D5DD;
-  box-shadow: 0 1px 0 0 #000 !;
-  border-radius: 8px;
-}
-
-/* input field */
-.input-field input[type=email] {
-  margin-top: 5px;
-  color: #D0D5DD;
-  border: 1px solid #D0D5DD;
-  border-radius: 8px;
-}
-
-
-/* input focus color */
 .input-field textarea:focus {
-  color: #D0D5DD;
-  border: 1px solid #D0D5DD;
-  border-bottom: 1px solid #D0D5DD;
-  box-shadow: 0 1px 0 0 #000 !;
+  border: 1px solid #84CAFF;
+  border-bottom: 1px solid #1570EF !important;
+  box-shadow: 0px 0px 0px 4px #D1E9FF;
+  box-shadow: 0px 1px 2px 0px #1018280D;
   border-radius: 8px;
   height: 132px !important;
 }
@@ -55,10 +42,22 @@
 /* input field */
 .input-field textarea {
   margin-top: 5px;
-  color: #D0D5DD;
   border: 1px solid #D0D5DD;
   border-radius: 8px;
   height: 132px !important;
+}
+
+/* invalid color */
+.input-field textarea.invalid {
+  border: 1px solid #F89687;
+  box-shadow: 0px 1px 2px 0px #1018280D;
+
+}
+
+.input-field textarea.invalid :focus {
+  border: 1px solid #F89687;
+  box-shadow: 0px 0px 0px 4px #FFD3CC;
+  box-shadow: 0px 1px 2px 0px #1018280D;
 }
 
 .btn {
@@ -70,7 +69,17 @@
 }
 
 .btn:hover {
-  background-color: #1570EF
+  background-color: #175CD3;
+}
+
+.btn:focus {
+  background-color: #1570EF;
+  box-shadow: 0px 0px 0px 4px #D1E9FF;
+}
+
+.btn:disabled {
+  border: 1px solid #B2DDFF;
+  background-color: #B2DDFF;
 }
 
 .body {

@@ -21,12 +21,14 @@ function Contact(){
             <div className="input-field col s12">
               <input id="email" type="email" placeholder="yourname@email.com"/>
               <label htmlFor="email" className="active">Email</label>
+              <span className="helper-text" data-error="wrong" data-success="right">Please enter an appropriate email address</span>
             </div>
           </div>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="message" className="materialize-textarea" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+              <textarea id="message" className="materialize-textarea validate" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
               <label htmlFor="textarea1" className="active">Message</label>
+              <span className="helper-text" data-error="wrong" data-success="right">Please enter a message</span>
             </div>
           </div>
           <div className="row">
