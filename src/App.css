@@ -2,7 +2,7 @@
 .input-field input[type=text]:focus, .input-field input[type=email]:focus, .input-field input[type=checkbox]:focus{
   border: 1px solid #84CAFF;
   border-bottom: 1px solid #1570EF !important;
-  box-shadow: 0 1px 0 0 #84CAFF;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF !important;
   border-radius: 8px;
 }
 
@@ -12,11 +12,6 @@
   color: #D0D5DD;
   border: 1px solid #D0D5DD;
   border-radius: 8px;
-}
-
-input:-internal-autofill-selected {
-  background-image: none !important;
-  background-color:white !important;
 }
 
 /* label color */
@@ -32,9 +27,7 @@ input:-internal-autofill-selected {
 /* input focus color */
 .input-field textarea:focus {
   border: 1px solid #84CAFF;
-  border-bottom: 1px solid #1570EF !important;
-  box-shadow: 0px 0px 0px 4px #D1E9FF;
-  box-shadow: 0px 1px 2px 0px #1018280D;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF !important;
   border-radius: 8px;
   height: 132px !important;
 }
@@ -48,10 +41,14 @@ input:-internal-autofill-selected {
 }
 
 /* invalid color */
+.input-field textarea.invalid :focus {
+  border: 1px solid #F89687;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+}
+
 .input-field textarea.invalid {
   border: 1px solid #F89687;
-  box-shadow: 0px 1px 2px 0px #1018280D;
-
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
 }
 
 .input-field textarea.invalid :focus {
@@ -81,6 +78,17 @@ input:-internal-autofill-selected {
   border: 1px solid #B2DDFF;
   background-color: #B2DDFF;
 }
+
+/* On mouse-over, add a grey background color */
+.input-field:hover input[type=checkbox] ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.input-field input[type=checkbox]:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
 
 .body {
   display: flex;

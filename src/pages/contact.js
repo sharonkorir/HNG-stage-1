@@ -28,7 +28,7 @@ function Contact(){
             <div className="input-field col s12">
               <textarea id="message" className="materialize-textarea validate" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
               <label htmlFor="textarea1" className="active">Message</label>
-              <span className="helper-text" data-error="wrong" data-success="right">Please enter a message</span>
+              <span className="helper-text" data-error="Please enter a message"></span>
             </div>
           </div>
           <div className="row">
