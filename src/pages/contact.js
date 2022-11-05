@@ -26,9 +26,9 @@ function Contact(){
           </div>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="message" className="materialize-textarea validate" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+              <textarea id="message" className="validate materialize-textarea" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
               <label htmlFor="textarea1" className="active">Message</label>
-              <span className="helper-text" data-error="Please enter a message"></span>
+              <span className="helper-text" data-error="Please enter a message" validate></span>
             </div>
           </div>
           <div className="row">
@@ -38,7 +38,7 @@ function Contact(){
             </label>
           </div>
           <div className="row">
-            <button className="btn col s12" id="btn_submit">Send message</button>
+            <button className="btn col s12" id="btn_submit" type="submit">Send message</button>
           </div>
         </form>
       </main>
