@@ -1,11 +1,11 @@
 import Homepage from './pages/homepage';
 import Contact from './pages/contact';
-import Footer from './components/footer';
 import {  BrowserRouter as 
   Router,
   Routes,
   Route
 } from "react-router-dom";
+import './App.css';
 
 function App(){
   return(
@@ -14,7 +14,6 @@ function App(){
         <Route path = '/' exact element ={<Homepage />} />
         <Route path = '/contact' element ={<Contact />} />
       </Routes>
-      <Footer/>
     </Router>
   )
 }

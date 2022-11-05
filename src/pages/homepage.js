@@ -4,33 +4,37 @@ import github from '../images/github.png';
 import more from '../images/more.png';
 import share from '../images/share.png';
 import slack from '../images/slack.png';
+import Footer from '../components/footer';
 // import {Link} from 'react-router-dom';
 
 function Home(){
   return(
-    <div className="container" style={{paddingTop:50}}>
-      <div className="row">
-        <div className="col s6 m6 l6"></div>
-        <div className="col s6 m6 l6">
-          <div className="right-align">
-            <div className="hide-on-small-only">
-              <img src={share} alt="more button" className="responsive-img"></img>
-            </div>
-            <div className="hide-on-med-and-up"
-            style={{
-              paddingLeft:'120px'
-            }}>
-              <img src={more} alt="more button" className="responsive-img"></img>
+    <body style={{paddingTop:50}} className='container'>
+      <header>
+        <div className='row'>
+          <div className="col s6 m6 l6"></div>
+          <div className="col s6 m6 l6">
+            <div className="right-align">
+              <div className="hide-on-small-only">
+                <img src={share} alt="more button" className="responsive-img"></img>
+              </div>
+              <div className="hide-on-med-and-up"
+              style={{
+                paddingLeft:'120px'
+              }}>
+                <img src={more} alt="more button" className="responsive-img"></img>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <header className="profile center-align">
-        <img src={profile} id="profile_img" alt="my profile" className="circle responsive-img" style={{maxHeight:'100px', minWidth:'100px'}}></img>
-        <h5 id="twitter"><strong>coding_architct</strong></h5>
-        <p className="hide" id="slack">sharon korir</p>
+        <div className="row center-align">
+          <img src={profile} id="profile_img" alt="my profile" className="circle responsive-img" style={{maxHeight:'100px', minWidth:'100px'}}></img>
+          <h5 id="twitter"><strong>coding_architct</strong></h5>
+          <p className="hide" id="slack">sharon korir</p>
+        </div>
+        
       </header>
-      <div className="row">
+      <main>
         <div className="col s12 m12 l12">
           <div className="card-panel grey lighten-3 center-align">
             <a href="https://twitter.com/coding_architct" className='black-text'>Twitter Link</a>
@@ -66,18 +70,19 @@ function Home(){
             <a className='black-text' id='contact' href='/contact'>Contact Me</a>
           </div>
         </div>
-      </div>
-      <div className="row" style={{maxHeight:'50px'}}>
-        <div className="center-align">
-            <img src={slack} alt='slack-logo' className='responsive-img'></img>
-            <a href="https://github.com/sharonkorir" 
-            style={{
-              padding: '10px',
-            }}
-            ><img src={github} alt="github logo" className="responsive-img"></img></a>
+        <div className="row" style={{maxHeight:'50px'}}>
+          <div className="center-align">
+              <img src={slack} alt='slack-logo' className='responsive-img'></img>
+              <a href="https://github.com/sharonkorir" 
+              style={{
+                padding: '10px',
+              }}
+              ><img src={github} alt="github logo" className="responsive-img"></img></a>
+          </div>
         </div>
-      </div>
-    </div>
+      </main>
+      <Footer/>
+    </body>
   )
 }
 export default Home;

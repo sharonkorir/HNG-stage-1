@@ -4,7 +4,7 @@ import './footer.css';
 
 function Footer(){
   return(
-    <div className='container'>
+    <footer>
       <div className="divider"></div>
       <div className='row' id='row'>
         <div className='col s12 m4 l4'>
@@ -31,7 +31,7 @@ function Footer(){
           </img>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 
