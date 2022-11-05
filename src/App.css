@@ -1,4 +1,4 @@
-/* label focus color */
+/* input focus color */
 .input-field input[type=text]:focus {
   color: #D0D5DD;
   border: 1px solid #D0D5DD;
@@ -8,9 +8,57 @@
 
 /* input field */
 .input-field input[type=text] {
+  margin-top: 5px;
   color: #D0D5DD;
   border: 1px solid #D0D5DD;
   border-radius: 8px;
+}
+
+/* label color */
+.input-field label {
+  color: #344054 !important;
+}
+
+/* label focus color */
+.input-field :focus label {
+  color: #344054 !important;
+}
+
+/* input focus color */
+.input-field input[type=email]:focus {
+  color: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  border-bottom: 1px solid #D0D5DD;
+  box-shadow: 0 1px 0 0 #000 !;
+  border-radius: 8px;
+}
+
+/* input field */
+.input-field input[type=email] {
+  margin-top: 5px;
+  color: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+}
+
+
+/* input focus color */
+.input-field textarea:focus {
+  color: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  border-bottom: 1px solid #D0D5DD;
+  box-shadow: 0 1px 0 0 #000 !;
+  border-radius: 8px;
+  height: 132px !important;
+}
+
+/* input field */
+.input-field textarea {
+  margin-top: 5px;
+  color: #D0D5DD;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  height: 132px !important;
 }
 
 .btn {
@@ -25,11 +73,14 @@
   background-color: #1570EF
 }
 
-body {
+.body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  padding-left: 150px;
+  padding-right: 150px;
 }
+
 main {
   flex: 1 0 auto;
 }

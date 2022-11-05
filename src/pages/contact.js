@@ -2,12 +2,10 @@ import Footer from "../components/footer";
 
 function Contact(){
   return(
-    <body style={{paddingTop:'50px'}} className='container'>
-      <header>
+    <div style={{paddingTop:'64px'}} className='body'>
+      <main className="container">
         <h4>Contact Me</h4>
-        <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      </header>
-      <main>
+        <p className="grey-text text-darken-3">Hi there, contact me to ask me about anything you have in mind.</p>
         <form className="col s12">
           <div className="row">
             <div className="input-field col s12 m6 l6">
@@ -27,14 +25,14 @@ function Contact(){
           </div>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="message" className="materialize-textarea" placeholder="Send me a message and I'll reply you as soon as possible "></textarea>
-              <label htmlFor="textarea1" className="active">Textarea</label>
+              <textarea id="message" className="materialize-textarea" placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
+              <label htmlFor="textarea1" className="active">Message</label>
             </div>
           </div>
           <div className="row">
-            <label>
-              <input type="checkbox" />
-              <span>You agree to providing your data to Sharon who may contact you</span>
+            <label className="input-field col s12">
+              <input type="checkbox"/>
+              <span style={{color:'#475467'}}>You agree to providing your data to Sharon who may contact you</span>
             </label>
           </div>
           <div className="row">
@@ -43,7 +41,7 @@ function Contact(){
         </form>
       </main>
       <Footer/>
-    </body>
+    </div>
   )
 }
 

@@ -9,7 +9,7 @@ import Footer from '../components/footer';
 
 function Home(){
   return(
-    <body style={{paddingTop:50}} className='container'>
+    <div style={{paddingTop:50}} className='body'>
       <header>
         <div className='row'>
           <div className="col s6 m6 l6"></div>
@@ -82,7 +82,7 @@ function Home(){
         </div>
       </main>
       <Footer/>
-    </body>
+    </div>
   )
 }
 export default Home;
